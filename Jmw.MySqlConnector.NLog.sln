@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jmw.MySqlConnector.NLog", "Jmw.MySqlConnector.NLog\Jmw.MySqlConnector.NLog.csproj", "{493F843A-F2C4-4D68-8B95-591D3D77C356}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A5F8EB22-8D20-428D-B6F9-AED13FA11DC5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{FEC6CC7F-E90A-4EB0-88C7-CB693A7D7477}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jmw.MySqlConnector.NLog", "src\Jmw.MySqlConnector.NLog\Jmw.MySqlConnector.NLog.csproj", "{A2D2F8CA-F518-49F3-8A27-CCE4A7E98ABF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jmw.MySqlConnector.NLog.Tests", "test\Jmw.MySqlConnector.NLog.Tests\Jmw.MySqlConnector.NLog.Tests\Jmw.MySqlConnector.NLog.Tests.csproj", "{6BCAE6BA-E025-4C75-9185-93CA60DB0843}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +17,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{493F843A-F2C4-4D68-8B95-591D3D77C356}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{493F843A-F2C4-4D68-8B95-591D3D77C356}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{493F843A-F2C4-4D68-8B95-591D3D77C356}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{493F843A-F2C4-4D68-8B95-591D3D77C356}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2D2F8CA-F518-49F3-8A27-CCE4A7E98ABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2D2F8CA-F518-49F3-8A27-CCE4A7E98ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2D2F8CA-F518-49F3-8A27-CCE4A7E98ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2D2F8CA-F518-49F3-8A27-CCE4A7E98ABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BCAE6BA-E025-4C75-9185-93CA60DB0843}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BCAE6BA-E025-4C75-9185-93CA60DB0843}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BCAE6BA-E025-4C75-9185-93CA60DB0843}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BCAE6BA-E025-4C75-9185-93CA60DB0843}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{A2D2F8CA-F518-49F3-8A27-CCE4A7E98ABF} = {A5F8EB22-8D20-428D-B6F9-AED13FA11DC5}
+		{6BCAE6BA-E025-4C75-9185-93CA60DB0843} = {FEC6CC7F-E90A-4EB0-88C7-CB693A7D7477}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AFE636C3-1C48-4A0E-BB3C-C59AA358D26A}
